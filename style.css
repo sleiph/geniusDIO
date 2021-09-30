@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #323232;
+    font-family: monospace;
+    color: white;
+    text-align: center;
+}
+
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    width: 100%;
+}
+
+h5 {
+
+    width: 100%;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 10px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 580px;
+    height: 580px;
+}
+
+.blue {
+    margin: 0 10px 10px 0;
+    grid-area: azul;
+    background-color: #1f51ff;
+    border-bottom-right-radius: 100%;
+}
+
+.red {
+    margin: 10px 10px 0 0;
+    grid-area: vermelho;
+    background-color: #eb0500;
+    border-top-right-radius: 100%;
+}
+
+.yellow {
+    margin: 0 0 10px 10px;
+    grid-area: amarelo;
+    background-color: #fcc200;
+    border-bottom-left-radius: 100%;
+}
+
+.green {
+    margin: 10px 0 0 10px;
+    grid-area: verde;
+    background-color: #2E8B57;
+    border-top-left-radius: 100%;
+}
+
+.selectado {
+    opacity: 0.5;
+}
